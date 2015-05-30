@@ -34,11 +34,11 @@ Configure following keymap to your `keymap.cson`.
 ```
 
 # Caution
-Since vim-mode currently not implement visual-block mode and vim-mode's native `j`, `l` move reset `blockwise`(@submode) to normal `visual` mode.  
-I need to track blockwise @active state explicitly.  
-So always use vim-mode-visual-blockwise:escape` to escape from visual block mode by setting appropriate keymap.
+Since vim-mode currently not implement visual-block mode and vim-mode's native `j`, `l` reset `blockwise`(@submode) to normal `visual` mode, I need to track blockwise @active state explicitly.  
+
+So always use `vim-mode-visual-blockwise:escape` to escape from visual block mode for precise tracking of visual-block mode by setting appropriate keymap.
 
 # Todo
-[ ] Precise state check when escape from visual-block.
-[ ] Support other insert-mode initiator like `a`, `i`, `C`.
-[ ] Concatenate undo transaction.
+* [ ] Precise state check when escape from visual-block.
+* [ ] Support other insert-mode initiator like `a`, `i`, `C`.
+* [ ] Concatenate undo transaction.
