@@ -86,6 +86,7 @@ module.exports =
           @getVimEditorState().activateCommandMode()
           event.abortKeyBinding()
         when 'o'
+          # [FIXME] quick&dirty implementation.
           @startRow = currentRow
         else
           event.abortKeyBinding()
