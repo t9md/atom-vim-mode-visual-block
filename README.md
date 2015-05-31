@@ -26,6 +26,7 @@ Configure following keymap to your `keymap.cson`.
   'I':      'vim-mode-visual-block:I'
   'A':      'vim-mode-visual-block:A'
   'D':      'vim-mode-visual-block:D'
+  'C':      'vim-mode-visual-block:C'
   'o':      'vim-mode-visual-block:o'
   'escape': 'vim-mode-visual-block:escape'
   'ctrl-[': 'vim-mode-visual-block:escape'
