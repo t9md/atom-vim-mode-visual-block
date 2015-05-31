@@ -1,7 +1,7 @@
 {
   "name": "vim-mode-visual-block",
   "main": "./lib/main",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "Add visual-blockwise feature to vim-mode",
   "repository": "https://github.com/t9md/atom-vim-mode-visual-block",
   "license": "MIT",
