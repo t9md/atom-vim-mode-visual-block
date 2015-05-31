@@ -14,8 +14,8 @@ module.exports =
       'vim-mode-visual-block:l': (event) => @blockOperation(event, 'l')
       'vim-mode-visual-block:D': (event) => @blockOperation(event, 'D')
       'vim-mode-visual-block:o': (event) => @blockOperation(event, 'o')
-      'vim-mode-visual-block:I':         => @startInsertAt('first')
-      'vim-mode-visual-block:A':         => @startInsertAt('last')
+      'vim-mode-visual-block:I': (event) => @startInsert(event, 'I')
+      'vim-mode-visual-block:A': (event) => @startInsert(event, 'A')
       'vim-mode-visual-block:escape': (event) => @escape(event)
       'vim-mode-visual-block:debug':     => @debug()
 
@@ -32,15 +32,13 @@ module.exports =
   isActive: ->
     @active
 
-  startInsertAt: (where) ->
+  startInsert: (event, input) ->
     @reset()
+    @getVimEditorState().activateCommandMode()
     @getVimEditorState().activateInsertMode()
-    for cursor in @getActiveTextEditor().getCursors()
-      if where is 'first'
-        # @getVimEditorState().activateInsertMode()
-        cursor.moveToFirstCharacterOfLine()
-      else if where is 'last'
-        cursor.moveToEndOfLine()
+    if input is 'A'
+      editor = @getActiveTextEditor()
+      editor.moveRight() unless editor.getLastCursor().isAtEndOfLine()
 
   getActiveTextEditor: ->
     atom.workspace.getActiveTextEditor()

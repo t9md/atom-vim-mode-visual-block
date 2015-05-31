@@ -2,7 +2,7 @@
 
 Add visual-block operation to [vim-mode](https://atom.io/packages/vim-mode).
 
-![gif](https://raw.githubusercontent.com/t9md/t9md/97168c5fdbfd311eb3a7d0b9d22bb0d761ea7d74/img/vim-mode-visual-block.gif)
+![gif](https://raw.githubusercontent.com/t9md/t9md/97168c5fdbfd311eb3a7d0b9d22bb0d761ea7d74/img/vim-mode-visual-blockwise.gif)
 
 # Development state
 Alpha
