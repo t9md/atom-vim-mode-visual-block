@@ -37,10 +37,10 @@ module.exports =
     @getVimEditorState().activateInsertMode()
     for cursor in @getActiveTextEditor().getCursors()
       if where is 'first'
-        @getVimEditorState().activateInsertMode()
-        # cursor.moveToFirstCharacterOfLine()
+        # @getVimEditorState().activateInsertMode()
+        cursor.moveToFirstCharacterOfLine()
       else if where is 'last'
-        # cursor.moveToEndOfLine()
+        cursor.moveToEndOfLine()
 
   getActiveTextEditor: ->
     atom.workspace.getActiveTextEditor()
