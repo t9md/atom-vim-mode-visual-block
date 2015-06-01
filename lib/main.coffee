@@ -77,12 +77,20 @@ module.exports =
     switch command
       when 'j'
         if currentRow < @startRow
-          _.first(editor.getCursorsOrderedByBufferPosition())
+          # GUARD ensure we never destroy() last cursor.
+            if (editor.getCursors().length < 2)
+              @reset()
+              break
+            _.first(editor.getCursorsOrderedByBufferPosition())
             .destroy()
         else
           editor.addSelectionBelow()
       when 'k'
         if currentRow > @startRow
+          # GUARD ensure we never destroy() last cursor.
+          if (editor.getCursors().length < 2)
+            @reset()
+            break
           _.last(editor.getCursorsOrderedByBufferPosition())
             .destroy()
         else
