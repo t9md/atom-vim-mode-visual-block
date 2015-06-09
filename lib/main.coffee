@@ -30,8 +30,6 @@ module.exports =
         blockwiseCommands[name] = (event) => @blockOperation(event, command)
 
     blockwiseCommands["#{@prefix}:toggle-debug"] = => @toggleDebug()
-    # blockwiseCommands["#{@prefix}:command-mode"] = => @commandMode()
-    # blockwiseCommands["#{@prefix}:insert-mode"] = => @insertMode()
     @disposables.add atom.commands.add('atom-text-editor', blockwiseCommands)
     @reset()
 
@@ -121,7 +119,7 @@ module.exports =
 
       when 'escape'
         vimState.activateCommandMode()
-        vimState.resetCommandMode()
+        @getActiveTextEditor().clearSelections()
       when 'o'
         @startRow = currentRow
       else

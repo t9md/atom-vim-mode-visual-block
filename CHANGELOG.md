@@ -1,3 +1,6 @@
+## 0.2.5 - [pre] Stability improve
+* no longer use `vimState.resetCommandMode()`.
+
 ## 0.2.4 - Stability improve
 * Never accidentally destroy(), last cursor()
 
