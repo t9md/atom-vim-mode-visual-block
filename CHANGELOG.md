@@ -1,3 +1,6 @@
+## 0.2.6 - Fix Typo
+* Fix README.md typo.
+
 ## 0.2.5 - Improve
 * Add provide default keymap.
 * No longer use `vimState.resetCommandMode()`.

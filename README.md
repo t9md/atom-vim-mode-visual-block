@@ -14,7 +14,7 @@ I'm not intended to complete solution.
 From version 0.2.5, starting to provide [default keymap](https://github.com/t9md/atom-vim-mode-visual-block/blob/master/keymaps/vim-mode-visual-block.cson).  
 
 For older version user
-* Remove explicit keymap from `keymap.cson` and user default keymap.
+* Remove explicit keymap from `keymap.cson` and use default keymap.
 
 # Limitation
 - Currently yank and paste for block range is not suppoted.
