@@ -1,3 +1,6 @@
+## 0.2.7 - Improve
+* `ctrl-v` within visual-block now work same as escape. #1
+
 ## 0.2.6 - Fix Typo
 * Fix README.md typo.
 

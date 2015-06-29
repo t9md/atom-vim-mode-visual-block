@@ -16,7 +16,7 @@ module.exports =
     blockwiseCommands = {}
     # [TODO] remove 'h', 'l'  after some period.
     commands = 'jkhloDCIA'.split('')
-    commands.push 'escape'
+    commands.push 'escape', 'ctrl-v'
     for command in commands
       do (command) =>
         name = "#{@prefix}:#{command}"
@@ -71,7 +71,7 @@ module.exports =
       when 'D', 'C'
         vimState.activateCommandMode()
         event.abortKeyBinding()
-      when 'escape'
+      when 'escape', 'ctrl-v'
         vimState.activateCommandMode()
         editor.clearSelections()
       when 'j', 'k'

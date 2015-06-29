@@ -9,3 +9,4 @@
   'escape': 'vim-mode-visual-block:escape'
   'ctrl-[': 'vim-mode-visual-block:escape'
   'ctrl-c': 'vim-mode-visual-block:escape'
+  'ctrl-v': 'vim-mode-visual-block:ctrl-v'
