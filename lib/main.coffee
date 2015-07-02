@@ -75,9 +75,9 @@ module.exports =
         vimState.activateCommandMode()
         editor.clearSelections()
       when 'j', 'k'
-        cursorPositions = editor.getCursorsOrderedByBufferPosition()
-        cursorTop       = _.first cursorPositions
-        cursorBottom    = _.last cursorPositions
+        cursors      = editor.getCursorsOrderedByBufferPosition()
+        cursorTop    = _.first cursors
+        cursorBottom = _.last cursors
 
         if (command is 'j' and cursorTop.getBufferRow() >= @startRow) or
             (command is 'k' and cursorBottom.getBufferRow() <= @startRow)
