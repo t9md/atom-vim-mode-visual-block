@@ -22,7 +22,7 @@ module.exports =
         name = "#{@prefix}:#{command}"
         blockwiseCommands[name] = (event) => @blockOperation(event, command)
 
-    blockwiseCommands["#{@prefix}:toggle-debug"] = => @toggleDebug()
+    # blockwiseCommands["#{@prefix}:toggle-debug"] = => @toggleDebug()
     @disposables.add atom.commands.add('atom-text-editor', blockwiseCommands)
     @reset()
 

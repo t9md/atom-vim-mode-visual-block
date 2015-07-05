@@ -8,6 +8,21 @@
   "engines": {
     "atom": ">=0.174.0 <2.0.0"
   },
+  "activationCommands": {
+    "atom-text-editor": [
+      "vim-mode-visual-block:o",
+      "vim-mode-visual-block:j",
+      "vim-mode-visual-block:k",
+      "vim-mode-visual-block:D",
+      "vim-mode-visual-block:C",
+      "vim-mode-visual-block:I",
+      "vim-mode-visual-block:A",
+      "vim-mode-visual-block:escape",
+      "vim-mode-visual-block:escape",
+      "vim-mode-visual-block:escape",
+      "vim-mode-visual-block:ctrl-v"
+    ]
+  },
   "consumedServices": {
     "vim-mode": {
       "versions": {

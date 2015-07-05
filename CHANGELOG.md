@@ -1,5 +1,6 @@
-## [PRE] 0.2.8 - Improve
+## 0.2.8 - Improve
 * Refactoring.
+* `activationCommands`.
 
 ## 0.2.7 - Improve
 * `ctrl-v` within visual-block now work same as escape. #1
