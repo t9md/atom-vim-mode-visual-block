@@ -69,10 +69,10 @@ module.exports =
       when 'o'
         @startRow = currentRow
       when 'D', 'C'
-        vimState.activateCommandMode()
+        vimState.activateNormalMode()
         event.abortKeyBinding()
       when 'escape', 'ctrl-v'
-        vimState.activateCommandMode()
+        vimState.activateNormalMode()
         editor.clearSelections()
       when 'j', 'k'
         cursors      = editor.getCursorsOrderedByBufferPosition()
@@ -125,7 +125,7 @@ module.exports =
           cursor.setBufferPosition(pointTarget)
 
         adjustCursor(selection) for selection in editor.getSelections()
-        vimState.activateCommandMode()
+        vimState.activateNormalMode()
         vimState.activateInsertMode()
 
         if command is 'A' and  cursorsAdjusted.length
