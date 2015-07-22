@@ -1,3 +1,4 @@
+## 0.2.10 - Useless release
 ## 0.2.9 - Follow renaming to NormalMode
 - Use `activateNormalMode` instead of `activateCommandMode`.
 
