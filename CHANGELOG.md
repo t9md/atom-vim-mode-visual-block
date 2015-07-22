@@ -1,4 +1,4 @@
-## 0.2.9 - [PRE] Follow renaming to NormalMode
+## 0.2.9 - Follow renaming to NormalMode
 - Use `activateNormalMode` instead of `activateCommandMode`.
 
 ## 0.2.8 - Improve
