@@ -1,4 +1,6 @@
-## 0.2.10 - Useless release
+## 0.2.10 - Quick FIX for #3
+- Disable activationCommands to avoid `getEditorState` throw error because of `@vimModeService` is undefined.
+
 ## 0.2.9 - Follow renaming to NormalMode
 - Use `activateNormalMode` instead of `activateCommandMode`.
 

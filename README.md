@@ -17,7 +17,8 @@ For older version user
 * Remove explicit keymap from `keymap.cson` and use default keymap.
 
 # Limitation
-- Currently yank and paste for block range is not suppoted.
+- Count not supported.
+- Currently yank and paste for block range is not supported.
 - No support for non-contiguous multi selection.
 
 # Todo
