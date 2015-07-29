@@ -1,3 +1,6 @@
+## 0.2.13 - Revert
+- Completely remove `activationCommands`.
+
 ## 0.2.12 - Improve
 - Now activated by `vim-mode:activate-blockwise-visual-mode`.
 - Delete deprecated keymap notification.

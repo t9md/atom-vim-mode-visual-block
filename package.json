@@ -8,11 +8,6 @@
   "engines": {
     "atom": ">=0.174.0 <2.0.0"
   },
-  "activationCommands": {
-    "atom-text-editor": [
-      "vim-mode:activate-blockwise-visual-mode"
-    ]
-  },
   "consumedServices": {
     "vim-mode": {
       "versions": {
