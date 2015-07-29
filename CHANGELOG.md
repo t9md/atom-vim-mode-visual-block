@@ -1,5 +1,11 @@
-## 0.2.10 - Quick FIX for #3
+## 0.2.12 - Improve
+- Now activated by `vim-mode:activate-blockwise-visual-mode`.
+- Delete deprecated keymap notification.
+
+## 0.2.11 - Quick FIX for #3
 - Disable activationCommands to avoid `getEditorState` throw error because of `@vimModeService` is undefined.
+
+## 0.2.10
 
 ## 0.2.9 - Follow renaming to NormalMode
 - Use `activateNormalMode` instead of `activateCommandMode`.

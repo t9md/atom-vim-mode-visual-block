@@ -14,8 +14,7 @@ module.exports =
   activate: (state) ->
     @disposables = new CompositeDisposable
     blockwiseCommands = {}
-    # [TODO] remove 'h', 'l'  after some period.
-    commands = 'jkhloDCIA'.split('')
+    commands = 'jkoDCIA'.split('')
     commands.push 'escape', 'ctrl-v'
     for command in commands
       do (command) =>
@@ -63,7 +62,6 @@ module.exports =
 
     currentRow  = editor.getLastCursor()?.getBufferRow()
     @startRow  ?= currentRow
-    # @debug "@startRow = #{@startRow}"
 
     switch command
       when 'o'
@@ -130,16 +128,6 @@ module.exports =
 
         if command is 'A' and  cursorsAdjusted.length
           cursor.moveRight() for cursor in cursorsAdjusted
-
-      else
-        event.abortKeyBinding()
-        content = """
-          *#{@prefix}*
-          * From version 0.2.5, `#{@prefix}` provide default keymap.
-          * And `h`, `l` command become obsolete.
-          * Remove all explicit keymap from `keymap.cson`.
-          """
-        atom.notifications.addWarning content, dismissable: true
 
     unless @isVisualBlockMode vimState
       @reset()
