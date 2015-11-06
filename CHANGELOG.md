@@ -1,3 +1,6 @@
+## 0.2.14 - Add note to README
+- Put link to vim-mode-plus.
+
 ## 0.2.13 - Revert
 - Completely remove `activationCommands`.
 
