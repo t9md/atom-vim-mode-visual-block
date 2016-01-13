@@ -1,3 +1,6 @@
+## 0.2.15 - Add note to README
+- Put word *not maintained* to be stand out at top of README.md
+
 ## 0.2.14 - Add note to README
 - Put link to vim-mode-plus.
 
