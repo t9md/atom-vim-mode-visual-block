@@ -2,12 +2,16 @@
 
 # **Not maintained**
 
-I'm no longer maintain this package. I'm no longer using vim-mode.  
-Instead I'm actively working for [vim-mode-plus](https://atom.io/packages/vim-mode-plus) and it's support visual-block natively.  
+I'm no longer maintaining this package.  
+Use [vim-mode-plus](https://atom.io/packages/vim-mode-plus) instead it's have native visual-block-mode support.   
 
-If you want to fix any bug for this package, fork it and I'm OK you to release forked version.  
-Don't ask me to fix this package.  
-It might better to unpublish this package? Please report issue if you have strong opinion for that.  
+If you want to fix any bug for **this** package, fork it and I'm OK you to release forked version.  
+Please don't ask me to fix this package.  
+
+It might be better to unpublish this package?  
+Please report issue if you have strong opinion for that.  
+
+Thank's for using this my package.  
 
 Note added at 2016.1.13
 
