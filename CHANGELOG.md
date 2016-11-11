@@ -1,3 +1,6 @@
+## 0.2.16 - Add note to README
+- More explictly DEPRECATED.
+
 ## 0.2.15 - Add note to README
 - Put word *not maintained* to be stand out at top of README.md
 

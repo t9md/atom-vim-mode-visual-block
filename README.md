@@ -1,6 +1,6 @@
 # vim-mode-visual-block
 
-# **Not maintained**
+# [DEPRECATED] **Not maintained**
 
 I'm no longer maintaining this package.  
 Use [vim-mode-plus](https://atom.io/packages/vim-mode-plus) instead it's have native visual-block-mode support.   
